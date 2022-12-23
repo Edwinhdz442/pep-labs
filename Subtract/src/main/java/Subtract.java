@@ -14,7 +14,11 @@ public class Subtract {
      * @param b some decimal number
      * @return a minus b
      */
+
+     double a = 19.99;
+     double b = 1.99;
+
     public double sub(double a, double b){
-        return 0;
+        return (a-b);
     }
 }
