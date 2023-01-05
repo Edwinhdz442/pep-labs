@@ -10,14 +10,5 @@ public class CustomExceptionThrower {
      */
     public void throwCustomException(){
         
-        class OddCalculator{
-            public int sumOddNumbers(int a, int b)throws CustomException {
-                if(a%2==0) {
-                    throw new CustomException("First number was even!");
-                } else if (b%2==0){
-                    throw new CustomException("Second numver was even!");
-                }
-            }return (a+b);
-        }
     }
 }
