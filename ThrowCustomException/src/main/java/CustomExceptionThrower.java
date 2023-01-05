@@ -11,7 +11,7 @@ public class CustomExceptionThrower {
     public void throwCustomException() throws CustomException{
         int a = 1;
         int b = 0;
-         if (b == 0){
+         if (b == 0 || a == 0){
             throw new CustomException();
          }
     }
