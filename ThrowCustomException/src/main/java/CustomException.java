@@ -5,7 +5,7 @@
  * Potentially, this class could also override some the behavior of Exception.
  */
 public class CustomException extends Exception{
-    public CustomException(String message){
-        super(message);
+    public CustomException(){
+        super("Cannot divide by Zero");
     }
 }
