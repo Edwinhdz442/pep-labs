@@ -1,4 +1,5 @@
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -28,7 +29,6 @@ public class MapExercise {
     public Map<Integer, String> createMap(){
         return null;
     }
-
     /**
      * Get the size of a map. (number of key/value paris)
      * @param map a map to be manipulated.
