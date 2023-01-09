@@ -25,6 +25,6 @@ public class Average {
         }
         double average = (double)(sum)/ (double)(nums.length);
 
-        return average ;
+        return average;
     }
 }
