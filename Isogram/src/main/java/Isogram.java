@@ -15,8 +15,14 @@ public class Isogram {
     public boolean isIsogram(String str){
         boolean repeatingLetter = true;
 
-        char [] alph = {'a', 'b' ,'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
-        
+        char [] arr = str.toCharArray();
+        for(char letter: arr){
+            if(str.indexOf(letter) != str.lastIndexOf(letter)){
+                repeatingLetter = false;
+            } else if(str.indexOf(letter) == str.lastIndexOf(letter)){
+                repeatingLetter = true;
+            }
+        }
         
         return repeatingLetter;
     }
