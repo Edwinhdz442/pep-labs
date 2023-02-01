@@ -19,8 +19,6 @@ public class Isogram {
         for(char letter: arr){
             if(str.indexOf(letter) != str.lastIndexOf(letter)){
                 repeatingLetter = false;
-            } else if(str.indexOf(letter) == str.lastIndexOf(letter)){
-                repeatingLetter = true;
             }
         }
         
