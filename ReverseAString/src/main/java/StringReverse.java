@@ -13,8 +13,19 @@ public class StringReverse {
      * @return the reverse of str.
      */
     public String reverse(String str){
-       StringBuilder string = new StringBuilder(str);
+        // First way to do it with StringBuilder 
+
+        /*StringBuilder string = new StringBuilder(str);
         StringBuilder revString = string.reverse();
-        return revString.toString();
+        return revString.toString(); */
+
+        // Second way to do it with a for loop
+
+        String revStr = "";
+        for(int i = str.length() -1; i >= 0; i--){
+            revStr += str.charAt(i);
+        }
+
+        return revStr;
     }
 }
