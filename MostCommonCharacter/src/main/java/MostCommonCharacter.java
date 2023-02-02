@@ -9,10 +9,18 @@ public class MostCommonCharacter {
      * @return the most common character within str.
      */
     public char recurringChar(String str) {
-        
+        char common = ' ';
         HashMap <Character, Integer> map = new HashMap<Character, Integer>();
         char [] strArry = str.toCharArray();
 
-        return ' ';
+        for(char c: strArry){
+            if(map.containsKey(c)){
+                map.put(c, (map.get(c)+ 1));
+            }else{
+                map.put(c, 1);
+            }
+        }
+
+        return common;
     }
 }
